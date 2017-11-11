@@ -704,7 +704,7 @@ bool myth_realtime(int val)
     if (ret !=0) {
       LOG(VB_GENERAL, LOG_ERR, "Failed to set RT thread");
     }
-    return ret != 0;
+    return ret == 0;
 }
 
 void myth_yield(void)
